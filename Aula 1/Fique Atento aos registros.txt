@@ -1,0 +1,41 @@
+→ BANCO DE DADOS
+→ TABELAS
+
+Campos (pedaços)
+	* Código → Integer
+	* Nome → Text
+	* Nascimento → Date
+	* Salario → Number
+Registros
+
+	* 200 produtos = 200 registros
+	* Chave Primaria - ÚNICO - Código/ID/cod
+	* → Primeiro Código
+	
+SQLITE3
+	→ .help, .exit, .tables, schema
+	SQL
+	DDL → Data Definition Language → Linguagem de DEFINIÇÃO de dados
+		→ Comandos para definição de dados, Create Table, Alter Table, Drop Table, Create Index
+	DML - Data Manipulation Language → Linguagem de manipulação de dados
+		→ INSERT INTO, ALTER TABLE
+	SELECT * FROM → Seleciona *TUDO DA TABELA NOME_DA_TABELA
+
+	DROP TABLE NOME_DA_TABELA → EXCLUI A TABELA
+
+	ALTER TABLE agenda rename to amigos; → renomeou a tabela de agenda para amigos.
+	ALTER TABLE alunos rename to estudantes;
+
+	ALTER TABLE NOME_DA_TABELA ADD NOME_DA_COLUNA
+	EX: → ALTER TABLE estudantes add codigo integer;
+	create table alunos2 (codigo int, nome varchar(50), telefone varchar(10), cidade varchar(50) );
+
+	CREATE TABLE Funcionarios (nome text, endereco text, telefone text, cidade text, estado text, cep text, rg text, cpf text, salario number);
+
+	SELECT * FROM Funcionarios;
+
+
+
+	
+	
+	

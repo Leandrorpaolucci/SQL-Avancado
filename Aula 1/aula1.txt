@@ -1,0 +1,23 @@
+cmd → navega ate o sqlite
+cmd → aula.sqlite
+----------------------------------------------------------------------
+
+→ create table agenda (nome text, telefone text);
+.tables (comando sqlite)
+→ create table alunos (matricula integer, nome text, telefone text, cidade text);
+→ create table produtos (codigo integer, nome text, qtd integer)
+
+----------------------------------------------------------------------
+
+TIPOS DE DADOS
+text, varchar, varchar2 → text
+integer - int
+number - int
+Single → float
+Date → Datas
+Boolean
+
+→ Ao criar uma tabela, devemos definir os tipos de dados!
+
+
+
