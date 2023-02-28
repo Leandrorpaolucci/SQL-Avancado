@@ -1,0 +1,46 @@
+SELECT * FROM Livro;
+
+--1
+SELECT l.titulo, e.nome FROM livro l, estilo e WHERE e.id = l.estilo_id;
+--2
+SELECT l.titulo, e.nome FROM livro l, editora e WHERE e.id = l.editora_id;
+--3
+SELECT l.titulo, a.nome FROM livro l, autor a WHERE a.id =  l.autor_id;
+--4
+SELECT * FROM Autor;
+--5
+SELECT l.titulo, e.nome FROM livro l, estilo e WHERE e.id = l.estilo_id and l.titulo like "A%";
+-- 6
+SELECT l.titulo, e.nome FROM livro l, estilo e WHERE e.id = l.estilo_id and e.estilo like "R%";
+-- 7
+SELECT aut.nome, est.nome, edit.nome, l.titulo FROM livro l , autor aut, estilo est, editora edit WHERE aut.nome like "D%";
+
+SELECT aut.nome, est.nome, edit.nome, edit.estado, l.titulo FROM livro l , autor aut, estilo est, editora edit 
+WHERE aut.id = l.autor_id and est.id = l.estilo_id and edit.id = editora_id and edit.estado="SP";
+
+UPDATE livro set autor_id = 2 WHERE id = 1;
+
+UPDATE editora SET telefone = "44 6666-6666" WHERE id=3;
+
+SELECT * FROM editora;
+
+UPDATE Autor SET nome = "Leandro Paolucci " WHERE id=8;
+
+SELECT * FROM Autor;
+
+UPDATE estilo SET nome = "Fantasia" WHERE ID=5;
+
+SELECT * FROM estilo;
+
+SELECT l.titulo, e.nome, ed.estado
+FROM livro l, estilo e, editora ed
+WHERE e.id = l.estilo_id AND ed.id = l.editora_id and ed.estado ="SP";
+
+
+SELECT l.titulo, ed.nome
+FROM livro l, editora ed
+WHERE ed.id = l.editora_id and ed.estado ="SP";
+
+select l.titulo, a.nome
+from livro l, autor a
+where a.id = l.autor_id order by a.nome;
